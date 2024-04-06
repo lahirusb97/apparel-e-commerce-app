@@ -20,11 +20,11 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-screen-xl m-auto">
+    <div className=" m-auto">
       <Nav />
 
       <HeroSlide />
-      <div className="flex flex-wrap gap-2 justify-between">
+      <div className="flex flex-wrap gap-2 justify-between mx-6">
         {products.map((e) => (
           <ProductCard item={e} />
         ))}

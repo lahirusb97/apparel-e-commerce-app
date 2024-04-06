@@ -1,0 +1,22 @@
+/* CustomArrows.css */
+
+/* Ensuring the slider container and arrows stay within bounds */
+.slider-container {
+}
+
+/* Styling arrows */
+.slick-next {
+  right: 50px;
+}
+
+.slick-prev {
+  left: 50px;
+}
+
+/* Hide arrows when not in use */
+.slick-disabled {
+  /* display: none !important; */
+}
+.slick-dots li {
+  font-size: 1rem;
+}

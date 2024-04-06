@@ -102,7 +102,14 @@ function Nav(props) {
               onMouseLeave={() => setSubNav([])}
               className=" relative z-10 mb-5"
             >
-              <div className="flex gap-4">
+              <div className="flex items-center">
+                <div className="position-relative h-4 ">
+                  <div className="flex items-center">
+                    <Typography sx={{ cursor: "pointer", p: 1 }}>
+                      Home
+                    </Typography>
+                  </div>
+                </div>
                 <DeskNavList
                   subNav={subNav}
                   setNavList={setNavList}
@@ -153,7 +160,10 @@ function Nav(props) {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
-            <Button color="warning" variant="contained">
+            <Button
+              sx={{ p: 0.5, fontSize: ".8rem", color: "white" }}
+              variant="contained"
+            >
               Search
             </Button>
           </Search>
@@ -216,7 +226,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   width: "100%",
   "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
